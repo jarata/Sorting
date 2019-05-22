@@ -18,9 +18,13 @@ def selection_sort(arr):
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
-
+    for i in range(len(arr)-1,0,-1):
+        for x in range(i):
+            if arr[x] > arr[x+1]:
+                temp = arr[x]
+                arr[x] = arr[x+1]
+                arr[x+1] = temp
     return arr
-
 
 # STRETCH: implement the Count Sort function below
 def count_sort( arr, maximum=-1 ):
