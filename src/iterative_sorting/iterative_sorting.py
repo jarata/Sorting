@@ -13,7 +13,9 @@ def selection_sort(arr):
 
 
         # TO-DO: swap
-
+        tmp = arr[smallest_index]
+        arr[smallest_index] = arr[cur_index]
+        arr[cur_index] = tmp
 
 
 
